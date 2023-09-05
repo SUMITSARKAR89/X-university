@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(rgb(180, 181, 241), rgb(176, 176, 218));
+      
+}
+
+.header{
+    background-image: url(img/main\ img.jpg) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 300px 100px;
+    
+}
+.heading{
+    text-align: center;
+    font-size: xx-large;
+    border: 1px solid #fffffffd;
+    background-color: #ffffff3a;
+    margin:20px;
+    border-radius: 40px;
+    padding: 20px;
+     
+}
+.heading:hover{
+    box-shadow: 1px 1px 0 rgb(199, 16, 16);
+}
+.row{
+    display: flex;
+    
+}
+.navbar{
+    background-color: rgba(46, 46, 179, 0.808);
+    border: 2px solid grey;
+    margin:0;
+    padding: 2px 15px;
+    display: flex;
+    border-radius: 10px;
+}
+.navbar a{
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    color: aliceblue;
+    padding: 20px;
+    font-size: xx-large;
+    transition: 0.6s;
+
+}
+.navbar a:hover{
+    background-color: rgba(125, 126, 221, 0.87);
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.8s;
+}
+p{
+    padding: 2px;
+    text-align: justify;
+    font-size: large;
+}
+.side .main,h2, h3{
+    padding: 10px;
+}
+h2{
+    font-size: 35px;
+    color:rgb(9, 17, 90)
+}
+h4{
+    text-align: right;
+    font-size: larger;
+    color:rgb(41, 3, 3);
+    cursor: pointer;
+
+}
+h4:hover{
+    font-size: x-large;
+}
+.side{
+    flex: 30%;
+    background-color: rgb(172, 185, 224);
+    padding: 1px; 
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.sideimg{
+    width: 100%;
+    padding: 2px 2px;
+    border: 2px solid grey;
+    border-radius: 8px;
+    box-shadow:0 0.6px 1px 0 ;
+  
+}
+.sideimg:hover{
+    background-color: rgb(173, 195, 216);
+    
+}
+.main{
+    flex: 70%;
+    padding: 3px;
+    transition: 0.5s;
+}
+.main>p{
+    color: rgb(53, 4, 4);
+    font-size: x-large;
+    font-weight: bold;
+}
+
+
+button{
+    padding: 10px 32px;
+    margin:4px;
+    font-size: large;
+    font-weight: bold;
+    background-color: rgba(8, 240, 112, 0.185);
+    border-radius: 6px;
+    border:0.5px solid #fff;
+    cursor: pointer;
+    transition: 0.6s;
+}
+button:active{
+    background-color: azure;
+}
+button:hover{
+    font-size: x-large;
+    
+}
+.footer{
+    padding:5px;
+    text-align: center;
+}
+@media screen and (max-width: 700px) {
+    .row, .navbar, .header {   
+      flex-direction: column;
+    }
+  }
